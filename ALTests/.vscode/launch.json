@@ -10,7 +10,7 @@
                                "serverInstance":  "NAV",
                                "authentication":  "Windows",
                                "schemaUpdateMode":  "Synchronize",
-                               "startupObjectId": 20,
+                               "startupObjectId": 130401,
                                "startupObjectType": "Page"
                            }
                        ]
