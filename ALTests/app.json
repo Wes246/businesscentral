@@ -15,7 +15,7 @@
     {
       "name": "GL Source Names",
       "publisher": "Objects4NAV",
-      "version": "2.0.1.2",
+      "version": "2.1.0.0",
       "appId": "479e77f3-031a-49fe-bb6a-314464c6a9a8"
     }
   ],
@@ -27,5 +27,9 @@
   "idRange":  {
                     "from":  70009240,
                     "to":  70009249
-                }
+                },
+  "features": [
+    "TranslationFile"
+  ]  
+              
 }
