@@ -7,7 +7,7 @@
 
   var
     GLSourceNamesMgt : Codeunit "O4N GL SN Mgt";
-    SourceType : Option " ",Customer,Vendor,"Bank Account",Employee;
+    SourceType : Option " ",Customer,Vendor,"Bank Account","Fixed Asset",Employee;
 
   [EventSubscriber(ObjectType::Table, 5200, 'OnAfterInsertEvent', '', true, false)]
   local procedure UpdateSourceNameOnFixedAssetInsert(var Rec : Record Employee;RunTrigger : Boolean);
