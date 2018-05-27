@@ -1,7 +1,5 @@
 ﻿codeunit 70009211 "O4N GL SN Feature Notif."
 {
-  // version GLSN10.0
-
 
   trigger OnRun();
   begin

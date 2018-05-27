@@ -1,6 +1,5 @@
 ﻿page 70009206 "O4N GL SNs DrillDown"
 {
-  // version GLSN10.0
 
   Caption='G/L Source Names DrillDown';
   Editable=false;

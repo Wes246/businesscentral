@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?><xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd"><file datatype="xml" source-language="en-US" target-language="de-AT" original="G/L Source Names"><body><group id="body"><trans-unit id="Table 102911037 - Field 1753214751 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+﻿<?xml version="1.0" encoding="utf-8"?><xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd"><file datatype="xml" source-language="en-US" target-language="de-AT" original="GL Source Names"><body><group id="body"><trans-unit id="Table 102911037 - Field 1753214751 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Source Type</source>
           <target state="translated">Herkunftsart</target><note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">Table:O4N GL SN - Field:Source Type</note>
         </trans-unit><trans-unit id="Table 102911037 - Field 1753214751 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source> ,Customer,Vendor,Bank Account,Fixed Asset</source>
-          <target state="translated"> ,Debitor,Kreditor,Bankkonto,Anlage</target><note from="Developer" annotates="general" priority="2" />
+          <source> ,Customer,Vendor,Bank Account,Fixed Asset,Employee</source>
+          <target state="needs-translation"></target><note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">Table:O4N GL SN - Field:Source Type</note>
         </trans-unit><trans-unit id="Table 102911037 - Field 1882905478 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Source No.</source>
@@ -367,8 +367,8 @@
           <target state="translated">Um die Namen der Quelle auf Sachposten verwenden zu können, müssen Benutzer die erforderlichen Berechtigungen verfügen.</target><note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">Page:O4N GL SN Setup Wizard - Control:Group18</note>
         </trans-unit><trans-unit id="Page 3431183161 - Control 974917505 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Users that can update master tables, like; Customer, Vendor, Bank Account and Fixed Asset, must be able to update the G/L Source Name lookup table.</source>
-          <target state="translated">Benutzer, die z. B. Mastertabellen, aktualisieren können; Debitor, Kreditor, Bankkonto und der Anlage, muss die Quelle Finanzbudgetnamen Lookup-Tabelle zu aktualisieren.</target><note from="Developer" annotates="general" priority="2" />
+          <source>Users that can update master tables, like; Customer, Vendor, Bank Account, Fixed Asset and Employee, must be able to update the G/L Source Name lookup table.</source>
+          <target state="needs-translation"></target><note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">Page:O4N GL SN Setup Wizard - Control:Group19</note>
         </trans-unit><trans-unit id="Page 3431183161 - Control 3647570164 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Let's go!</source>

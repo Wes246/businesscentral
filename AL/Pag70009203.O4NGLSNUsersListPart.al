@@ -1,6 +1,5 @@
 ﻿page 70009203 "O4N GL SN Users ListPart"
 {
-  // version GLSN10.0
 
   DeleteAllowed=false;
   InsertAllowed=false;

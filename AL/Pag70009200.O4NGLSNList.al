@@ -1,6 +1,5 @@
 ﻿page 70009200 "O4N GL SN List"
 {
-  // version GLSN10.0
 
   Caption='G/L Source Name List';
   Editable=false;

@@ -1,6 +1,5 @@
 ﻿table 70009202 "O4N GL SN Help Resource"
 {
-  // version GLSN10.0
 
   Permissions=TableData "O4N GL SN Help Resource"=im;
 

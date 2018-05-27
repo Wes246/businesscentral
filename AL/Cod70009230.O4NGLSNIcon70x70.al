@@ -1,7 +1,5 @@
 ﻿codeunit 70009230 "O4N GL SN Icon 70x70"
 {
-  // version GLSN10.0.0.2
-
 
   trigger OnRun();
   begin

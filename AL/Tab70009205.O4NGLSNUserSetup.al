@@ -1,7 +1,5 @@
 ﻿table 70009205 "O4N GL SN User Setup"
 {
-  // version GLSN10.0.0.1
-
 
   fields
   {

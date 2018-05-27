@@ -1,12 +1,13 @@
 ﻿page 70009201 "O4N GL SN Setup"
 {
-  // version GLSN10.0
 
   Caption='G/L Source Name Setup';
   DeleteAllowed=false;
   InsertAllowed=false;
   PageType=Card;
   SourceTable="O4N GL SN Setup";
+  UsageCategory=Administration;
+  ApplicationArea=Basic,Suite;
 
   layout
   {
@@ -23,6 +24,7 @@
         field("Next Registration Verification";"Next Registration Verification")
         {
           ApplicationArea=Basic,Suite;
+          Visible=false;
           Editable=false;
         }
       }

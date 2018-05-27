@@ -1,7 +1,5 @@
 ﻿codeunit 70009215 "O4N GL SN Assisted Setup"
 {
-  // version GLSN10.0
-
 
   trigger OnRun();
   begin

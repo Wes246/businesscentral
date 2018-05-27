@@ -1,7 +1,5 @@
 ﻿table 70009204 "O4N GL SN Group Access"
 {
-  // version GLSN10.0
-
 
   fields
   {

@@ -1,7 +1,5 @@
 ﻿table 70009201 "O4N GL SN Setup"
 {
-  // version GLSN10.0
-
 
   fields
   {

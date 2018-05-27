@@ -1,6 +1,5 @@
 ﻿page 70009204 "O4N GL SN Group ListPart"
 {
-  // version GLSN10.0
 
   DeleteAllowed=false;
   InsertAllowed=false;

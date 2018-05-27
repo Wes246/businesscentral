@@ -1,7 +1,5 @@
 ﻿codeunit 70009205 "O4N GL SN FxdAsset Upd."
 {
-  // version GLSN10.0
-
 
   trigger OnRun();
   begin
@@ -9,7 +7,7 @@
 
   var
     GLSourceNamesMgt : Codeunit "O4N GL SN Mgt";
-    SourceType : Option " ",Customer,Vendor,"Bank Account","Fixed Asset";
+    SourceType : Option " ",Customer,Vendor,"Bank Account","Fixed Asset",Employee;
 
   [EventSubscriber(ObjectType::Table, 5600, 'OnAfterInsertEvent', '', true, false)]
   local procedure UpdateSourceNameOnFixedAssetInsert(var Rec : Record "Fixed Asset";RunTrigger : Boolean);
@@ -18,7 +16,7 @@
     GLSourceNamesMgt.AddSource(SourceType::"Fixed Asset",Rec."No.",Rec.Description);
   end;
 
-  [EventSubscriber(ObjectType::Table, 5600, 'OnAfterInsertEvent', '', true, false)]
+  [EventSubscriber(ObjectType::Table, 5600, 'OnAfterDeleteEvent', '', true, false)]
   local procedure UpdateSourceNameOnFixedAssetDelete(var Rec : Record "Fixed Asset";RunTrigger : Boolean);
   begin
     if Rec.ISTEMPORARY then exit;

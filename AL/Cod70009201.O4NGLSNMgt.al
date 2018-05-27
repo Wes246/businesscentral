@@ -1,6 +1,5 @@
 ﻿codeunit 70009201 "O4N GL SN Mgt"
 {
-  // version GLSN10.0
 
   Permissions=TableData "O4N GL SN"=rimd;
 
@@ -10,7 +9,7 @@
 
   var
     Window : Dialog;
-    SourceType : Option " ",Customer,Vendor,"Bank Account","Fixed Asset";
+    SourceType : Option " ",Customer,Vendor,"Bank Account","Fixed Asset",Employee;
     ProcessInfo : Label 'Populating G/L Source Names...';
     RequiredPermissionMissingErr : Label 'Required permissions for table "%1" is missing.  Can''t refresh lookup data.';
     ProcessCompleted : Label 'G/L Source Names lookup table update finished';
@@ -67,6 +66,7 @@
     Vendor : Record Vendor;
     BankAccount : Record "Bank Account";
     FixedAsset : Record "Fixed Asset";
+    Employee: Record Employee;
   begin
     with GLSourceName do
       if not WRITEPERMISSION then
@@ -83,6 +83,9 @@
     with FixedAsset do
       if not READPERMISSION then
         ERROR(RequiredPermissionMissingErr);
+    with Employee do
+      if not READPERMISSION then
+        ERROR(RequiredPermissionMissingErr);
     GLSourceName.DELETEALL;
     PopulateSourceTable;
     if not HideMessage then
@@ -96,20 +99,23 @@
     Vendor : Record Vendor;
     BankAccount : Record "Bank Account";
     FixedAsset : Record "Fixed Asset";
+    Employee: Record Employee;
   begin
     if GLSourceName.WRITEPERMISSION and
       Customer.READPERMISSION and
       Vendor.READPERMISSION and
       BankAccount.READPERMISSION and
-      FixedAsset.READPERMISSION
+      FixedAsset.READPERMISSION and
+      Employee.READPERMISSION
     then begin
-      if not GLSourceName.ISEMPTY then exit;
-      if Customer.ISEMPTY and Vendor.ISEMPTY and BankAccount.ISEMPTY and FixedAsset.ISEMPTY then exit;
+      if not GLSourceName.IsEmpty() then exit;
+      if Customer.IsEmpty() and Vendor.IsEmpty() and BankAccount.IsEmpty() and FixedAsset.IsEmpty() and Employee.IsEmpty() then exit;
       Window.OPEN(ProcessInfo);
       AddSourceTable(SourceType::Customer,Customer);
       AddSourceTable(SourceType::Vendor,Vendor);
       AddSourceTable(SourceType::"Bank Account",BankAccount);
       AddSourceTable(SourceType::"Fixed Asset",FixedAsset);
+      AddSourceTable(SourceType::Employee,Employee);
       Window.CLOSE;
     end;
   end;
@@ -129,6 +135,16 @@
       until NEXT = 0;
     end;
   end;
+
+  procedure AddEmployeeTable(SourceType : Option;Employee : Record Employee);
+  begin
+    with Employee do begin
+      if FINDSET then repeat
+        AddSource(SourceType,Employee."No.",CopyStr(Employee.FullName(),1,50));
+      until NEXT = 0;
+    end;
+  end;
+  
 }
 
 

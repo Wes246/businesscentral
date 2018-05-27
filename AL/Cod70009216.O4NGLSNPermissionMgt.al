@@ -1,7 +1,5 @@
 ﻿codeunit 70009216 "O4N GL SN Permission Mgt"
 {
-  // version GLSN10.0
-
 
   trigger OnRun();
   begin
@@ -99,6 +97,7 @@
     WhoThatCanUpdate(DATABASE::Vendor,TempUser,TempUserGroup);
     WhoThatCanUpdate(DATABASE::"Bank Account",TempUser,TempUserGroup);
     WhoThatCanUpdate(DATABASE::"Fixed Asset",TempUser,TempUserGroup);
+    WhoThatCanUpdate(DATABASE::Employee,TempUser,TempUserGroup);
 
     CopyUserGroups(TempUserGroup,TempGroupAccess,TempGroupAccess."Permission Level"::Update);
     CopyUsers(TempUser,TempUserAccess,TempGroupAccess,TempGroupAccess."Permission Level"::Update);

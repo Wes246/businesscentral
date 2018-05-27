@@ -1,6 +1,5 @@
 ﻿page 70009210 "O4N GL SN Setup Wizard"
 {
-  // version GLSN10.0
 
   Caption='G/L Source Name Setup';
   DeleteAllowed=false;
@@ -50,7 +49,7 @@
           group(Group19)
           {
             ShowCaption=false;
-            InstructionalText='Users that can update master tables, like; Customer, Vendor, Bank Account and Fixed Asset, must be able to update the G/L Source Name lookup table.';
+            InstructionalText='Users that can update master tables, like; Customer, Vendor, Bank Account, Fixed Asset and Employee, must be able to update the G/L Source Name lookup table.';
           }
         }
         group("Let's go!")

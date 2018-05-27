@@ -1,7 +1,5 @@
 ﻿codeunit 70009212 "O4N GL SN Perm. Notif."
 {
-  // version GLSN10.0
-
 
   trigger OnRun();
   begin

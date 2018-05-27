@@ -1,6 +1,5 @@
 ﻿codeunit 70009206 "O4N GL Show Source Card"
 {
-  // version GLSN10.0
 
   TableNo="G/L Entry";
 
@@ -25,6 +24,8 @@
         ShowBankAccCard("Source No.");
       "Source Type"::"Fixed Asset":
         ShowFixedAssetCard("Source No.");
+      "Source Type"::Employee:
+        ShowEmployeeCard("Source No.");
       else
         ERROR(NoSourceDefined);
     end;
@@ -42,6 +43,8 @@
           ShowBankAccCard("Source No.");
         "Source Type"::"Fixed Asset":
           ShowFixedAssetCard("Source No.");
+        "Source Type"::Employee:
+          ShowEmployeeCard("Source No.");
         else
           ERROR(NoSourceDefined);
       end;
@@ -90,6 +93,17 @@
       else
         ERROR(SourceNotFound,TABLECAPTION,FIELDCAPTION("No."),No);
   end;
+
+  local procedure ShowEmployeeCard(No : Code[20]);
+  var
+    Employee : Record Employee;
+  begin
+    with Employee do
+      if GET(No) then
+        PAGE.RUN(PAGE::"Employee Card",Employee)
+      else
+        ERROR(SourceNotFound,TABLECAPTION,FIELDCAPTION("No."),No);
+  end;  
 }
 
 

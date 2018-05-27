@@ -1,7 +1,5 @@
 ﻿codeunit 70009200 "O4N GL SN App Mgt."
 {
-  // version GLSN10.0.0.1
-
 
   trigger OnRun();
   begin

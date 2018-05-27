@@ -1,6 +1,5 @@
 ﻿page 70009202 "O4N GL SN Help Resources"
 {
-  // version GLSN10.0
 
   Editable=false;
   PageType=List;

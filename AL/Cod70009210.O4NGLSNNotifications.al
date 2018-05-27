@@ -1,7 +1,5 @@
 ﻿codeunit 70009210 "O4N GL SN Notifications"
 {
-  // version GLSN10.0.0.1
-
 
   trigger OnRun();
   begin

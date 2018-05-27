@@ -1,7 +1,5 @@
 ﻿codeunit 70009203 "O4N GL SN Vend Upd."
 {
-  // version GLSN10.0
-
 
   trigger OnRun();
   begin
@@ -9,7 +7,7 @@
 
   var
     GLSourceNamesMgt : Codeunit "O4N GL SN Mgt";
-    SourceType : Option " ",Customer,Vendor,"Bank Account","Fixed Asset";
+    SourceType : Option " ",Customer,Vendor,"Bank Account","Fixed Asset",Employee;
 
   [EventSubscriber(ObjectType::Table, 23, 'OnAfterInsertEvent', '', true, false)]
   local procedure UpdateSourceNameOnVendorInsert(var Rec : Record Vendor;RunTrigger : Boolean);

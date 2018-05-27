@@ -9,7 +9,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table:O4N GL SN - Field:Source Type</note>
         </trans-unit>
         <trans-unit id="Table 102911037 - Field 1753214751 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source> ,Customer,Vendor,Bank Account,Fixed Asset</source>
+          <source> ,Customer,Vendor,Bank Account,Fixed Asset,Employee</source>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">Table:O4N GL SN - Field:Source Type</note>
         </trans-unit>
@@ -464,7 +464,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page:O4N GL SN Setup Wizard - Control:Group18</note>
         </trans-unit>
         <trans-unit id="Page 3431183161 - Control 974917505 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Users that can update master tables, like; Customer, Vendor, Bank Account and Fixed Asset, must be able to update the G/L Source Name lookup table.</source>
+          <source>Users that can update master tables, like; Customer, Vendor, Bank Account, Fixed Asset and Employee, must be able to update the G/L Source Name lookup table.</source>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">Page:O4N GL SN Setup Wizard - Control:Group19</note>
         </trans-unit>
