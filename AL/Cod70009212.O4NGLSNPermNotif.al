@@ -10,7 +10,7 @@
 
   procedure ShowAssistedSetupToUser(MissingPermissionNotification : Notification);
   begin
-    StartVideo('https://www.youtube.com/embed/C3zK8Jm0lGM');
+    StartVideo('https://www.youtube.com/embed/h9qmD6AfqpQ');
   end;
 
   local procedure StartVideo(Url : Text);

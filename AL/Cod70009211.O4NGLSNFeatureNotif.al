@@ -10,7 +10,7 @@
 
   procedure ShowDetailsToUser(NewFeatureNotification : Notification);
   begin
-    StartVideo('https://www.youtube.com/embed/hpyLICCzur8');
+    StartVideo('https://www.youtube.com/embed/rTLPfA_GX0o');
   end;
 
   local procedure StartVideo(Url : Text);
