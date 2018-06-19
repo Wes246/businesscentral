@@ -13,9 +13,9 @@
   "capabilities": [],
   "dependencies": [
     {
-      "name": "GL Source Names",
+      "name": "G/L Source Names",
       "publisher": "Objects4NAV",
-      "version": "2.1.0.0",
+      "version": "2.1.1.0",
       "appId": "479e77f3-031a-49fe-bb6a-314464c6a9a8"
     }
   ],
