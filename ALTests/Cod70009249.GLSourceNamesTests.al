@@ -399,6 +399,7 @@ codeunit 70009249 "O4N GL Test Codeunits"
             CompanyInfo.Insert();
         CompanyInfo."Registration No." := '';
         CompanyInfo.Modify();
+        EmplLib.SetupEmployeeNumberSeries();
     end;
 
     local procedure CreateCLEntry(SourceType: Option; SourceNo: Code[20]; var GLEntry: Record "G/L Entry") 
