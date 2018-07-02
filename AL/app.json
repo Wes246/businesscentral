@@ -1,4 +1,4 @@
-﻿{
+{
     "id":  "479e77f3-031a-49fe-bb6a-314464c6a9a8",
     "name":  "G/L Source Names",
     "publisher":  "Objects4NAV",
@@ -12,17 +12,17 @@
     "logo":  "Images\\Logo250x250.png",
     "platform":  "12.0.0.0",
     "application":  "12.0.0.0",
-    "target": "Extension",
-    "showMyCode": true,
+    "target":  "Extension",
+    "showMyCode":  true,
     "capabilities":  [
 
                      ],
     "screenshots":  [
-        "Screenshots\\AssistedSetup.PNG",
-        "Screenshots\\AssistedSetupFinished.PNG",
-        "Screenshots\\CustomerSourceCard.PNG",
-        "Screenshots\\ExtensionInstallation.PNG",
-        "Screenshots\\SourceNamesInGLEntries.PNG"
+                        "Screenshots\\AssistedSetup.PNG",
+                        "Screenshots\\AssistedSetupFinished.PNG",
+                        "Screenshots\\CustomerSourceCard.PNG",
+                        "Screenshots\\ExtensionInstallation.PNG",
+                        "Screenshots\\SourceNamesInGLEntries.PNG"
                     ],
     "dependencies":  [
 
