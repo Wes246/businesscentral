@@ -10,10 +10,12 @@
       Caption='Source Type';
       OptionCaption=' ,Customer,Vendor,Bank Account,Fixed Asset,Employee';
       OptionMembers=" ",Customer,Vendor,"Bank Account","Fixed Asset",Employee;
+      DataClassification=CustomerContent;
     }
     field(2;"Source No.";Code[20])
     {
       Caption='Source No.';
+      DataClassification=CustomerContent;
       TableRelation=IF ("Source Type"=CONST(Customer)) Customer
         ELSE IF ("Source Type"=CONST(Vendor)) Vendor
         ELSE IF ("Source Type"=CONST("Bank Account")) "Bank Account"
@@ -23,6 +25,7 @@
     field(3;"Source Name";Text[50])
     {
       Caption='Source Name';
+      DataClassification=CustomerContent;
     }
   }
 

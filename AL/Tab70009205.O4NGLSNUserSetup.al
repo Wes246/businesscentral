@@ -7,12 +7,14 @@
     {
       Caption='User Security ID';
       TableRelation=User."User Security ID";
+      DataClassification=SystemMetadata;
     }
     field(2;"Notification Id";Guid)
     {
       Caption='Notification Id';
       Editable=false;
       NotBlank=true;
+      DataClassification=SystemMetadata;
     }
   }
 

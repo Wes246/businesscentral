@@ -8,18 +8,21 @@
       Caption='Permission Level';
       OptionCaption='Read,Update';
       OptionMembers=Read,Update;
+      DataClassification=SystemMetadata;
     }
     field(2;"User Security ID";Guid)
     {
       Caption='User Security ID';
       NotBlank=true;
       TableRelation=User;
+      DataClassification=SystemMetadata;
     }
     field(3;"Access Via User Group Code";Code[20])
     {
       Caption='Access Via User Group Code';
       NotBlank=true;
       TableRelation="User Group";
+      DataClassification=SystemMetadata;
     }
     field(4;"User Name";Code[50])
     {
@@ -38,10 +41,12 @@
     field(6;"Has Permission";Boolean)
     {
       Caption='Has Permission';
+      DataClassification=SystemMetadata;
     }
     field(7;"Assign Permission";Boolean)
     {
       Caption='Assign Permission';
+      DataClassification=SystemMetadata;
 
       trigger OnValidate();
       begin
@@ -51,6 +56,7 @@
     field(8;"Remove Permission";Boolean)
     {
       Caption='Remove Permission';
+      DataClassification=SystemMetadata;
 
       trigger OnValidate();
       begin
@@ -60,6 +66,7 @@
     field(9;"Updated Via User Group";Boolean)
     {
       Caption='Updated Via User Group';
+      DataClassification=SystemMetadata;
     }
   }
 
